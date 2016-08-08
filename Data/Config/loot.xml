@@ -1442,19 +1442,8 @@
 <!-- lootcontainer 33 Supply Crate Ranged weapons Day 7 -->
 
 <!-- lootcontainer 34 Supply Crate General -->
-	<lootgroup name="SupplyMaterials" count="3">
-		<item name="coal" count="10,15"/>
-		<item name="potassiumNitratePowder" count="10,32"/>
-		<item name="rockSmall" count="20,50"/>
-		<item name="stone" count="5,15"/>
-		<item name="scrapLead" count="6,10"/>
-		<item name="scrapIron" count="6,10"/>
-		<item name="gravel" count="8,11"/>
-		<item name="oilShale" count="15,30"/>
-        <item name="wood" count="100"/>
-		<item name="carpenterKit" count="10,15"/>
-	</lootgroup>
-	<lootgroup name="SupplyFood" >
+
+	<lootgroup name="SupplyFood">
 		<item name="canBeef" count="3,5"/>
 		<item name="canChicken" count="3,5"/>
 		<item name="canHam" count="3,5"/>
@@ -1462,37 +1451,34 @@
         <item name="canChunkyMeatStew" count="3,5"/>
         <item name="canMeatStew" count="3,5"/>
         <item name="canVegetableStew" count="3,5"/>
-        <item name="stewChunkyMeat" count="3,5"/>
-		<item name="militaryRation" count="3,5" prob=".2"/>
+		<item name="militaryRation" count="3,5"/>
+		<item name="foodHoney" count="3,5"/>
 	</lootgroup>
-	<lootgroup name="SupplyPistolGroup">
-		<item name="gunPistol"/>
-		<item name="gunPistolSilenced" prob="0.25"/>
-	</lootgroup>
+
 	<lootgroup name="SupplyPistol" count="all">
 		<item name="9mmBullet" count="20,30"/>
-		<item group="SupplyPistolGroup"/>
+		<item name="gunPistolSilenced"/>
 		<item name="repairKit" count="3,4"/>
 	</lootgroup>
-	<lootgroup name="SupplyRifleGroup">
-		<item name="gunHuntingRifle"/>
-		<item name="gunBoltRifle"/>
-	</lootgroup>
+	
 	<lootgroup name="SupplyRifle" count="all">
-		<item group="SupplyRifleGroup"/>
-		<item name="762mmBullet" count="10,20"/>
+		<item name="gunBoltRifle"/>
+		<item name="762mmBullet" count="15,30"/>
 		<item name="repairKit" count="3,4"/>
 	</lootgroup>
+	
 	<lootgroup name="SupplyAssaultRifle" count="all">
 		<item name="gunAK47"/>
 		<item name="762mmBullet" count="15,30"/>
 		<item name="repairKit" count="3,4"/>
 	</lootgroup>
+	
 	<lootgroup name="SupplyMagnum" count="all">
 		<item name="gun44Magnum"/>
 		<item name="44MagBullet" count="15,30"/>
 		<item name="repairKit" count="3,4"/>
 	</lootgroup>
+	
 	<lootgroup name="SupplyShotgunGroup">
 	  <item name="gunSawedOffPumpShotgun"/>
 	  <item name="gunPumpShotgun" prob="0.25"/>
@@ -1502,62 +1488,39 @@
 		<item name="shotgunShell" count="15,20"/>
 		<item name="repairKit" count="3,4"/>
 	</lootgroup>
+	
 	<lootgroup name="SupplyMP5" count="all">
 		<item name="gunMP5"/>
-		<item name="10mmBullet" count="5,30"/>
+		<item name="10mmBullet" count="15,30"/>
 		<item name="repairKit" count="3,4"/>
 	</lootgroup>
+	
 	<lootgroup name="SupplySniperGroup">
 	  <item name="gunSniperRifle"/>
-	  <item name="gunSniperSilenced" prob="0.05"/>
+	  <item name="gunSniperSilenced" prob="0.25"/>
 	</lootgroup>
 	<lootgroup name="SupplySniper" count="all">
     	<item group="SupplySniperGroup"/>
 		<item name="762mmBullet" count="15,30"/>	
 		<item name="repairKit" count="3,4"/>
 	</lootgroup>
+	
 	<lootgroup name="SupplyRocket" count="all">
 		<item name="gunRocketLauncher"/>
 		<item name="rocket" count="6,8"/>
 		<item name="repairKit" count="3,4"/>
 	</lootgroup>
+	
 	<lootgroup name="SupplyTools">
-		<item name="pickaxeIron"/>
-		<item name="pickaxeSteel"/>
-		<item name="partsAuger_parts"/>
-		<item name="bellows"/>
-		<item name="calipers"/>
-		<item name="toolAndDieSet"/>
-        <item name="clawHammer"/>  
-        <item name="wrench"/>  
-        <item name="shovelIron"/>  
-        <item name="padlock"/>  	
-        <item name="hoeIron"/>  			
-        <item name="nailgun"/>
-		<item name="weedCleaver"/>
+		<item group="powerTools" prob="0.1"/>
+		<item group="rareToolset" prob="0.2"/>
+		<item group="commonTools" prob="0.5"/>
+		<item name="calipers" prob="0.05"/>
+		<item name="toolAndDieSet" prob="0.05"/>
+		<item name="bulletTumbler" prob="0.05"/>
+		<item name="beaker" prob="0.05"/>
 	</lootgroup>
-	<lootgroup name="SupplyAutomotive" count="1,2">
-		<item name="minibikeSeat"/>
-		<item name="headlight"/>
-		<item name="minibikeWheels"/>
-        <item name="partsHandlebars"/>
-		<item name="partsChainsaw_blade"/>
-        <item name="partsAuger_blade"/>
-        <item name="smallEngine"/>
-		<item name="minibikeHandlebars"/>
-		<item name="minibikeChassis"/>
-        <item name="gasCan" count="150,250"/>
-		<item name="carBattery" />
-	</lootgroup>
-	<lootgroup name="SupplyAmmo" count="1,3">
-        <item name="9mmBulletHP" count="10,12"/>
-		<item name="shotgunSlug" count="3,7"/>
-		<item name="rocket" count="3,4"/>
-		<item name="762mmBulletHP" count="10,15"/>
-		<item name="10mmBulletHP" count="10,15"/>
-		<item name="9mmBulletHP" count="10,15"/>
-		<item name="bulletTumbler" count="1" prob="0.05"/>
-	</lootgroup>
+	
 	<lootgroup name="SupplyWeapons" count="1">
     	<item group="SupplyRocket"/>
 		<item group="SupplyPistol"/>
@@ -1568,25 +1531,25 @@
 		<item group="SupplyMP5"/>
 		<item group="SupplySniper"/>
 	</lootgroup>
+	
 	<lootgroup name="SupplyGroups" count="1">
     	<item group="SupplyWeapons"/>
-		<item group="SupplyAutomotive"/>
-		<item group="SupplyAmmo"/>
 		<item group="SupplyTools"/>
 	</lootgroup>
+	
 	<lootgroup name="SupplyGeneric" count="all">
-		<item name="painkillers" count="0,3"/>
 		<item name="firstAidKit" count="0,3"/>
 		<item name="antibiotics" count="0,3"/>
 		<item name="waterPurified" count="0,3"/>
-		<item group="books"/>
 		<item group="SupplyFood"/>
 		<item name="genericAmmoBox" />
 	</lootgroup>
+	
 	<lootgroup name="SupplyCrate" count="all">
     	<item group="SupplyGeneric"/>
 		<item group="SupplyGroups"/>
 	</lootgroup>
+	
 <lootcontainer id="34" count="1" size="8,4" destroy_on_close="true" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="baseTemplate">
     	<item group="SupplyCrate"/>
 </lootcontainer>
